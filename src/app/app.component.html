@@ -1,21 +1,72 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<mat-toolbar>
+    <span>{{ title | titlecase }}</span>
+    <span class="fill-remaining-space"></span>
+    <a mat-button routerLink=".">首页</a>
+    <a mat-button routerLink=".">服务</a>
+    <a mat-button routerLink=".">作品</a>
+    <a mat-button routerLink=".">团队</a>
+    <a mat-button routerLink=".">联系</a>
+</mat-toolbar>
 
-<router-outlet></router-outlet>
+<!-- banner -->
+<div class="banner section">
+    <h2>hello, we are <br><span>Perfowl Studio</span></h2>
+    <h3>Perfowl Studio是一个软件设计 & 开发工作室。我们会提供最佳的解决方案，帮助您将想法落地，让想法不再局限于想法</h3>
+</div>
+
+<!-- service -->
+<div class="service section">
+    <h2>What we do</h2>
+
+    <!-- product design -->
+    <div>
+        <h1>产品设计</h1>
+        <p>每一次的产品设计都视为改变世界的第一步</p>
+        <p>需求分析，原型设计，Demo 开发，从内到外的产品设计流程，不在真空中幻想</p>
+    </div>
+
+    <!-- UI/UX -->
+    <div>
+        <h1>UI/UX</h1>
+        <p>我们通过设计教会用户使用产品</p>
+        <p>UI 界面设计，交互动画，Style Guideline 定义，App Icon 创作，品牌标识设计</p>
+    </div>
+
+    <!-- full stack development -->
+    <div>
+        <h1>全栈开发</h1>
+        <p>从骨子里就散发着优雅的气息</p>
+        <p>Web，iOS，Android一个不落，找到最佳的平台实现你的想法，不为了全栈而全栈</p>
+    </div>
+</div>
+
+<!-- our work -->
+<div>
+    <h1>Our Work</h1>
+    <div>
+        <h3>游历</h3>
+        <p>「游历」是一款专注于游戏本身，帮你找到最适合你的 Switch 游戏的 app。</p>
+        <p>通过「游历」，你可以了解即将发售和已发售的 Switch 游戏，让你全面掌握 Nintendo Switch 的游戏资料，不错过任何一款值得玩的游戏。</p>
+        <button>官方网站</button>
+    </div>
+</div>
+
+<!-- team -->
+<div>
+    <h1>Our Team</h1>
+    <div>
+        <h1>w</h1>
+        <p>产品设计/Android 开发/Web 开发</p>
+    </div>
+    <div>
+        <h1>winwinyang</h1>
+        <p>产品设计/视觉设计/IOS开发/Web 开发</p>
+    </div>
+</div>
+
+<!-- contact -->
+<div>
+    <h1>对我们有兴趣</h1>
+    <button>联系我们</button>
+    <p>Copryright © 2018 Perfowl studio, All rights reserved. 鲁ICP备18016991号-1</p>
+</div>
