@@ -20,6 +20,12 @@ h3
     font-weight: normal
     color: $color-font-primary
 
+.row
+    display: flex
+    
+    .col
+        flex: 1
+    
 .banner
     padding-top: 200px
     padding-bottom: 200px
@@ -44,21 +50,34 @@ h3
     h3 
         text-align: center
         
-    .row
-        display: flex
+    .card
+        h4
+            font-size: 24px
+            font-weight: normal
+            text-align: center
+            color: #4B527C
+            line-height: 32px                
+            margin: 0 0 16px 0
+        p
+            font-size: 14px
+            text-align: center
+            color: $color-font-secondary
+            margin: 0
 
-        .col
-            flex: 1
-
-            h4
-                font-size: 24px
-                font-weight: normal
-                text-align: center
-                color: #4B527C
-                line-height: 32px
-                margin: 0 0 16px 0
-            p
-                font-size: 14px
-                text-align: center
-                color: $color-font-secondary
-                margin: 0
+.work
+    h3 
+        text-align: center
+    .youli
+        text-align: center
+        h2
+            color: $color-font-primary
+            font-weight: normal
+            font-size: 56px
+            margin: 0
+        p 
+            font-size: 14px
+            color: $color-font-secondary
+            margin: 0
+        
+        button
+            margin: 16px 0
