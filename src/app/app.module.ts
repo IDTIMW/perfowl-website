@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
 import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TeamComponent } from './team/team.component';
     ServiceComponent,
     WorkComponent,
     TeamComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
