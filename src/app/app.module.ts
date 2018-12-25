@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { BannerComponent } from './banner/banner.component';
 import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { WorkComponent } from './work/work.component';
     BannerComponent,
     ServiceComponent,
     WorkComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,
