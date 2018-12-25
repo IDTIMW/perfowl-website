@@ -1,12 +1,4 @@
-<mat-toolbar>
-    <span>{{ title | titlecase }}</span>
-    <span class="fill-remaining-space"></span>
-    <a mat-button routerLink=".">首页</a>
-    <a mat-button routerLink=".">服务</a>
-    <a mat-button routerLink=".">作品</a>
-    <a mat-button routerLink=".">团队</a>
-    <a mat-button routerLink=".">联系</a>
-</mat-toolbar>
+<app-nav></app-nav>
 
 <!-- banner -->
 <div class="banner section">
@@ -52,7 +44,7 @@
             <h2>游历</h2>
             <p>「游历」是一款专注于游戏本身，帮你找到最适合你的 Switch 游戏的 app。</p>
             <!-- <p>通过「游历」，你可以了解即将发售和已发售的 Switch 游戏，让你全面掌握 Nintendo Switch 的游戏资料，不错过任何一款值得玩的游戏。</p> -->
-            <button mat-raised-button color="primary">官方网站</button>
+            <button mat-raised-button>官方网站</button>
         </div>
     </div>
 </div>
@@ -75,6 +67,6 @@
 <!-- contact -->
 <div class="footer contact">
     <h3>对我们有兴趣</h3>
-    <button mat-raised-button color="accent">联系我们</button>
+    <button mat-raised-button>联系我们</button>
     <p>Copryright © 2018 Perfowl studio, All rights reserved. 鲁ICP备18016991号-1</p>
 </div>
