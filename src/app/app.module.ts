@@ -11,6 +11,7 @@ import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
     WorkComponent,
     TeamComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
