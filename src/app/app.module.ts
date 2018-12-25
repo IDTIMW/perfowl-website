@@ -7,12 +7,14 @@ import { MaterialModule } from './material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { BannerComponent } from './banner/banner.component';
+import { ServiceComponent } from './service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     BannerComponent,
+    ServiceComponent,
   ],
   imports: [
     BrowserModule,
