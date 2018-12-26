@@ -2,5 +2,16 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"
 
 body
-    font-family: Roboto, "Helvetica Neue", sans-serif
-    margin: 0
+    background-color: #f8f8fa !important
+
+.underline-small
+    display: inline-block
+    position: relative
+
+.underline-small::before
+    content: ''
+    height: 4px
+    width: 32px
+    background: #F05D7C
+    position: absolute
+    bottom: -12px
