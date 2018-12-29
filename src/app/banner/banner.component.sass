@@ -1,16 +1,52 @@
 .banner-image
     margin-top: -56px
     width: 100%
-    background-image: url("../../assets/images/banner_bg.png")
+    background-image: url("../../assets/images/banner_bg_1.png")
     background-repeat: no-repeat
-    background-position: 120% bottom
+    background-position: right center
     background-size: contain
     z-index: 1
-    
 
+@media (max-width: 575.98px)
+    .banner-image
+        background-position: 80% 144%
+        background-size: 200%
+
+    h1
+        text-align: center
+        margin-top: 152px !important
+    
+    h4
+        text-align: center
+        margin-bottom: 296px
+
+@media (min-width: 1200px)
+    .banner-image
+        background-image: none
+
+    .container
+        background-image: url("../../assets/images/banner_bg_1.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+        z-index: 1
+        
+
+//@media (min-width: 576px) and (max-width: 767.98px)
+    //.banner-image
+        //background-position: -100% 152%
+        //background-size: 112%
+
+//.container
+    //background-image: url("../../assets/images/banner_bg_1.png")
+    //background-repeat: no-repeat
+    //background-position: center
+    //z-index: 1
+    
 h1
     color: #212528
     font-weight: normal
+    margin-top: 240px
     
     span
         color: #ee4a6c
@@ -18,8 +54,9 @@ h1
 h4
     color: #8C93BC
     font-weight: normal
+    margin-bottom: 240px
 
-.banner
-    padding-top: 240px
-    padding-bottom: 240px
+//.banner
+    //padding-top: 240px
+    //padding-bottom: 240px
 
