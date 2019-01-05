@@ -1,5 +1,13 @@
-//$('body').scrollspy({ target: '#menu' })
 $(document).ready(function(){
+	// change nav bar background color when scroll
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 56 ){
+			$('#menu').addClass('scroll');
+		} else {
+			$('#menu').removeClass('scroll');
+		};
+	});
+
   // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 50});
 
