@@ -11,6 +11,8 @@ import { ServiceComponent } from './service/service.component';
 import { WorkComponent } from './work/work.component';
 import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
+import { TimestampComponent } from './work/timestamp/timestamp.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     WorkComponent,
     TeamComponent,
     FooterComponent,
+    TimestampComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
