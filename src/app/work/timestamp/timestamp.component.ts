@@ -11,6 +11,7 @@ export class TimestampComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+    window.scroll(0, 0);
   }
 
   returnHomepage() {
