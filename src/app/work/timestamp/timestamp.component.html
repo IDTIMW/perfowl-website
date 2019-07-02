@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-white">
     <a (click)=" returnHomepage()" class="navbar-brand" href="#">
         <mat-icon aria-hidden="false" aria-label="return PERFOWL">reply</mat-icon>
-        perfowl
+        PERFOWL
     </a>
 </nav>
 
@@ -9,19 +9,23 @@
     <div class="container">
         <div class="row no-gutter">
             <!-- app icon -->
-            <div class="col-2 pr-4">
-                <img class="app-icon float-right shadow" src="assets/images/timestamp_icon.png" alt="timestamp icon">
+            <div class="col-3 col-sm-2 pr-4">
+                <img class="app-icon float-right shadow d-block" src="assets/images/timestamp_icon.png"
+                    alt="timestamp icon">
             </div>
 
             <!-- app introduce -->
-            <div class="col">
-                <h2>时间戳 | Timestamp</h2>
-                <h5>一款没有压力的时间管理工具</h5>
-                <img class="play-store mr-3" src="assets/images/Download_on_the_App_Store_Badge_CNSC_RGB_blk_092917.svg"
-                    alt="app store">
-                <img class="play-store" src="assets/images/google_play_badge.svg" alt="google play store">
+            <div class="col ">
+                <h3>时间戳 | Timestamp</h3>
+                <h6>一款没有压力的时间管理工具</h6>
+                <!-- <img class="play-store mr-3" src="assets/images/Download_on_the_App_Store_Badge_CNSC_RGB_blk_092917.svg"
+                    alt="app store"> -->
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.perfowl.timestamp">
+                    <img class="play-store" src="assets/images/google_play_badge.svg" alt="google play store">
+                </a>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -38,14 +42,15 @@
 <div class="section">
     <div class="container">
         <div class="row no-gutter">
-            <div class="col-3">
-                <h3>两种计时器</h3>
+            <div class="col-md-3">
+                <h3 class="mb-4">两种计时器</h3>
             </div>
-            <div class="col">
-                <p class="mb-2"><span class="text-
+            <div class="col-md">
+                <p class="mb-4"><span class="text-
                     font-weight-bolder">番茄时钟</span>：推荐用于学习，工作，读书等某些需要独立专注或确定时间长度任务的使用场景。
                 </p>
-                <p><span class="text-font-weight-bold">普通计时器</span>：推荐用在除去以上场景，剩下的都可以使用普通计时器进行记录，例如休息，会议或一些时间无法确定的任务活动。
+                <p><span class="text-
+                    font-weight-bolder">普通计时器</span>：推荐用在除去以上场景，剩下的都可以使用普通计时器进行记录，例如休息，会议或一些时间无法确定的任务活动。
                 </p>
             </div>
         </div>
@@ -55,17 +60,17 @@
 <div class="section feature bg-white">
     <div class="container">
         <div class="row no-gutter text-center">
-            <div class="col px-1">
+            <div class="col-md px-2 mb-3">
                 <mat-icon inline="true" aria-hidden="false" aria-label="project customize">bookmark</mat-icon>
                 <h5>项目自定义</h5>
                 <p>可以自定义项目颜色，快速的分类活动，让您的工作日程、学习目标、生活琐事都能一目了然。</p>
             </div>
-            <div class="col px-1">
+            <div class="col-md px-2">
                 <mat-icon inline="true" aria-hidden="false" aria-label="project customize">storage</mat-icon>
                 <h5>数据安全</h5>
                 <p>无需注册，打开即用，所有数据都保存在本地</p>
             </div>
-            <div class="col px-1">
+            <div class="col-md px-2">
                 <mat-icon inline="true" aria-hidden="false" aria-label="project customize">bar_chart</mat-icon>
                 <h5>项目统计</h5>
                 <p>随时可查看近期项目花费情况</p>
@@ -77,10 +82,10 @@
 <div class="section opinion">
     <div class="container">
         <div class="row no-gutter">
-            <div class="col-3">
-                <h3>一些想法</h3>
+            <div class="col-sm-3">
+                <h3 class="mb-4">一些想法</h3>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <mat-icon aria-hidden="false" aria-label="quote">format_quote</mat-icon>
                 <p class="mb-5">
                     市面上有不少时间管理的方法，说实话不少方法使用起来都或多或少给人带来一些负担。但我们也知道这是它们故意为之的，为的就是“迫使”用户来完成任务，改变自己。我在之前也是这些方法的用户，在一段时间内确实是解决了一些问题，但很难坚持下来。因为过程实在是太痛苦了，感觉总是和自己做斗争，好不容易战胜了，却也没力气再继续做下去。那么有没有不那么痛苦的办法，我们给出的答案——时间戳，一款不会给用户压力的时间管理工具。
@@ -88,9 +93,17 @@
                 <p class="mb-5">
                     我们思考了关于时间管理相关的种种问题之后，认为这些问题有一个切入点，那就是自我欺骗。上学时每节课时是40分钟，上了一节课，我就认为我学习了40分钟，等到晚上写完作业躺在床上回想今天都干了些啥时，我们很容易得出一个我们学习了一天这样的结论。这模糊的答案其实就是自我欺骗，因为这个大约的一天中除了包括学习的时间，还包括了学习时走神的时间，课间的休息时间，吃饭的时间。如果真的记录一下这些时间，会发现花在学习上的时间往往比我们以为要少得多。
                 </p>
-                <p>所以我们认为大部分追求效率的人来说，刚开始做的不是直接追求那些大师的时间安排，而应该是专注于自己，其实我们还有很多时间都没充分的利用，只是我们没有意识到而已。一天纯工作的时间有5个小时并不少，因为通常这五个小时需要花8个左右的实际时间来完成。我们希望能够通过时间戳帮助你们更好地认识自己，够坦诚的面对自己，当你足够了解自己之后，具体的解决方法比其他人更清楚。
+                <p class="mb-5">
+                    所以我们认为大部分追求效率的人来说，刚开始做的不是直接追求那些大师的时间安排，而应该是专注于自己，其实我们还有很多时间都没充分的利用，只是我们没有意识到而已。一天纯工作的时间有5个小时并不少，因为通常这五个小时需要花8个左右的实际时间来完成。我们希望能够通过时间戳帮助你们更好地认识自己，够坦诚的面对自己，当你足够了解自己之后，具体的解决方法比其他人更清楚。
+                </p>
+                <p class="text-center">
+                    —— <a class="btn btn-dark" href="mailto:hello@perfowl.com">联系我们</a> ——
                 </p>
             </div>
         </div>
     </div>
+</div>
+
+<div class="footer containerbg-dark text-white bg-dark py-2 pl-2">
+    <p><small>Copryright © 2018 Perfowl studio, All rights reserved. 鲁ICP备18016991号-1</small></p>
 </div>
