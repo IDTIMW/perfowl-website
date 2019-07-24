@@ -1,0 +1,104 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Vlogger 工具人</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" [ngx-scroll-to]="platform">平台</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngx-scroll-to]="tutorial">教程</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngx-scroll-to]="music">音乐版权</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngx-scroll-to]="video">视频素材</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngx-scroll-to]="editor">剪辑软件</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h4 #platform>平台</h4>
+    <div class="row">
+        <div *ngFor="let site of platformSites" class="col-md-4">
+            <a target="_blank" href="{{ site.url }}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ site.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ site.into }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <h4 #tutorial>教程</h4>
+    <div class="row">
+        <div *ngFor="let site of tutorialSites" class="col-md-4">
+            <a target="_blank" href="{{ site.url }}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ site.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ site.into }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <h4 #music>版权音乐</h4>
+    <div class="row">
+        <div *ngFor="let site of musicSites" class="col-md-4">
+            <a target="_blank" href="{{ site.url }}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ site.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ site.into }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <h4 #video>视频素材</h4>
+    <div class="row">
+        <div *ngFor="let site of videoSites" class="col-md-4">
+            <a target="_blank" href="{{ site.url }}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ site.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ site.into }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <h4 #editor>剪辑软件</h4>
+    <div class="row">
+        <div *ngFor="let site of softwareSites" class="col-md-4">
+            <a target="_blank" href="{{ site.url}}">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ site.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ site.into }}</h6>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="text-center footer">
+    <small class="text-muted">Copryright © 2018 Perfowl studio, All rights reserved. 鲁ICP备18016991号-1</small>
+</div>

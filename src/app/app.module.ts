@@ -13,6 +13,10 @@ import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimestampComponent } from './work/timestamp/timestamp.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { VloggerToolsComponent } from './work/vlogger-tools/vlogger-tools.component';
+import { SiteService } from './site.service';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+
 
 @NgModule({
   declarations: [
@@ -25,14 +29,16 @@ import { HomepageComponent } from './homepage/homepage.component';
     FooterComponent,
     TimestampComponent,
     HomepageComponent,
+    VloggerToolsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [SiteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
