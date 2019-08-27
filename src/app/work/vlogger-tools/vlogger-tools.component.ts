@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SiteService } from 'src/app/site.service';
+import { SeoService } from 'src/app/seo.service';
 
 @Component({
   selector: 'app-vlogger-tools',
@@ -17,9 +18,13 @@ export class VloggerToolsComponent implements OnInit {
   public videoSites = [];
 
 
-  constructor(private _Sites: SiteService) { }
+  constructor(
+    private _Sites: SiteService,
+    private seoService: SeoService,
+  ) { }
 
   ngOnInit() {
+    this.updateVloggerToolsMetaTags();
     this.platformSites = this._Sites.getPlatformSites();
     this.musicSites = this._Sites.getMusicSites();
     this.softwareSites = this._Sites.getSoftwareSites();
@@ -27,10 +32,14 @@ export class VloggerToolsComponent implements OnInit {
     this.videoSites = this._Sites.getVideoSites();
   }
 
+  updateVloggerToolsMetaTags() {
+    this.seoService.updateVloggerToolsMetaTags();
+  }
+
 
 
   scrollToElement($element): void {
-    console.log($element);
+    // console.log($element);
     $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 

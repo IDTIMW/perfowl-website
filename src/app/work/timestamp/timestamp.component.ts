@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SeoService } from 'src/app/seo.service';
 
 @Component({
   selector: 'app-timestamp',
@@ -8,10 +9,18 @@ import { Router } from '@angular/router';
 })
 export class TimestampComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private seoService: SeoService
+  ) { }
 
   ngOnInit() {
+    this.updateTimestampMetaTags();
     window.scroll(0, 0);
+  }
+
+  updateTimestampMetaTags() {
+    this.seoService.updateTimestampMetaTags();
   }
 
   returnHomepage() {
