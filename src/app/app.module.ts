@@ -32,7 +32,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     VloggerToolsComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
