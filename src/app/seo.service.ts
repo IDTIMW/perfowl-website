@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,8 @@ import { Meta } from '@angular/platform-browser';
 export class SeoService {
 
   constructor(
-    private meta: Meta
+    private meta: Meta,
+    private titleService: Title
   ) { }
 
   updatePerfowlMetaTags() {
@@ -19,6 +20,8 @@ export class SeoService {
   }
 
   updateTimestampMetaTags() {
+    this.titleService.setTitle("时间戳 | Timestamp - Perfowl");
+
     this.meta.updateTag({
       name: 'description', content: '时间戳 - 番茄工作法 | 时间记录器 | 管理自己需要从认识自己开始, 一款追求小而美的时间管理工具，内置番茄时钟与普通计时器可在不同的使用场景下使用合适的计时器进行任务记录'
     });
@@ -29,6 +32,7 @@ export class SeoService {
   }
 
   updateVloggerToolsMetaTags() {
+    this.titleService.setTitle("Vlogger 工具人 | VloggerTools - Perfowl")
     this.meta.updateTag({
       name: 'description', content: 'Vlogger Tools 网址导航是 Vlogger 和 预备 Vlogger 的必备的导航站，收录了版权音乐，视频，教程，剪辑软件，剪辑等必备工具以及国内外网站，包含了 Vlogger 最常用的工具，素材，资料，网站。'
     });
