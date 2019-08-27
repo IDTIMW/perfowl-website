@@ -17,6 +17,10 @@ export class TimestampComponent implements OnInit {
   ngOnInit() {
     this.updateTimestampMetaTags();
     window.scroll(0, 0);
+    console.log('url: ' + this.router.url);
+    if (this.router.url == "/timestamp/privacy-policy") {
+      document.getElementById("openModalButton").click();
+    }
   }
 
   updateTimestampMetaTags() {

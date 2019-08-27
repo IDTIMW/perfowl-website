@@ -6,6 +6,7 @@ import { VloggerToolsComponent } from './work/vlogger-tools/vlogger-tools.compon
 
 const routes: Routes = [
   { path: 'timestamp', component: TimestampComponent },
+  { path: 'timestamp/privacy-policy', component: TimestampComponent },
   { path: '', component: HomepageComponent },
   { path: 'vloggertools', component: VloggerToolsComponent },
 ];
