@@ -23,7 +23,6 @@ export class VloggerToolsComponent implements OnInit {
     this.platformSites = this._Sites.getPlatformSites();
     this.musicSites = this._Sites.getMusicSites();
     this.softwareSites = this._Sites.getSoftwareSites();
-    this.equipmentSites = this._Sites.getEquipmentSites();
     this.tutorialSites = this._Sites.getTutorialSites();
     this.videoSites = this._Sites.getVideoSites();
   }

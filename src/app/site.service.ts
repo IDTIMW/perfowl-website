@@ -27,7 +27,7 @@ export class SiteService {
       { "name": "PremiumBeat", "into": "PremiumBeat's curated library of royalty-free music gives creative professionals the polished feel of the big production houses. All PremiumBeat's music is exclusive and 100% copyright clear. Start listening today!", "url": "https://www.premiumbeat.com" },
       { "name": "Musicbed", "into": "Create a free account today and find the perfect song for your film, with a curated roster featuring hundreds of leading composers and emerging indie artists.", "url": "https://www.musicbed.com" },
       { "name": "Music Vine", "into": "Music Vine makes the world's finest production music accessible to projects of all shapes and sizes.", "url": "https://musicvine.com" },
-      // { "name": "", "into": "", "url": "https://artlist.io" },
+      { "name": "Artlist", "into": "Music Licensing for video, Music for videos, Music for films, royalty free music, Music subscription, music library for videos, music for YouTube videos, commercial music, Music Licensing for Videos & Films, royalty free music subscription. Music,Licensing,Video,Film,YouTube", "url": "https://artlist.io" },
       { "name": "Marmoset", "into": "Meticulously curated rare, vintage and emerging artists, bands and record labels for music licensing.", "url": "https://www.marmosetmusic.com" },
       { "name": "Soundstripe", "into": "Royalty free music and unlimited music for video, for one low price. Sign up for unlimited royalty free music downloads, and find the perfect song for your project in minutes!", "url": "https://soundstripe.com" },
       { "name": "Soundsnap ", "into": "Soundsnap is the Leading Sound Library for Unlimited SFX Downloads. Browse 250,000+ Sound Effects Used by Hollywood Sound Designers & Editors.", "url": "https://www.soundsnap.com" },
@@ -83,15 +83,6 @@ export class SiteService {
       { "name": "影视工业网", "into": "是中国最大的泛影视垂直社群，为影视从业者提供行业最新资讯、设备购买、影视教育、电影人扶持、资源对接、影视招聘等服务。", "url": "https://107cine.com" },
       { "name": "影视剧风", "into": "影视飓风是一个意在传授特效制作/相机评测/剪辑技巧等相关知识，发布高质量短片/ 微电影的小团体", "url": "https://space.bilibili.com/946974/" },
       { "name": "摄影师陈文坚", "into": "Vlog领域优质UP主", "url": "https://space.bilibili.com/18902951/" },
-      // { "name": "", "into": "", "url": "" },
-      // { "name": "", "into": "", "url": "" },
-      // { "name": "", "into": "", "url": "" },
-      // { "name": "", "into": "", "url": "" },
-
     ];
-  }
-
-  getEquipmentSites() {
-    return [];
   }
 }
