@@ -20,19 +20,97 @@ export class SiteService {
 
   getMusicSites() {
     return [
-      { "name": "Audio Library", "into": "Audio Library is a YouTube channel dedicated to search, catalog, sort and publishes free music for content creators.", "url": "https://www.audiolibrary.com.co" },
-      { "name": "Epidemic Sound", "into": "Struggle with music licensing for video, film or YouTube? The solution is simple. Our library is of the highest quality, usable on all social platforms and royalty-free forever.", "url": "https://www.epidemicsound.com" },
-      { "name": "AudioJungle", "into": "Discover 896,497 Royalty Free Music tracks and audio files from only $1 on AudioJungle. Buy Royalty Free Music from a Global Community of Musicians and Sound Engineers.", "url": "https://audiojungle.net" },
-      { "name": "Pond5", "into": "Search the world's largest video collection plus millions of music tracks, sound effects, motion graphics and images. Over 20,000 new videos added daily. Find the perfect media for your next creative project. Search now.", "url": "https://www.pond5.com" },
-      { "name": "PremiumBeat", "into": "PremiumBeat's curated library of royalty-free music gives creative professionals the polished feel of the big production houses. All PremiumBeat's music is exclusive and 100% copyright clear. Start listening today!", "url": "https://www.premiumbeat.com" },
-      { "name": "Musicbed", "into": "Create a free account today and find the perfect song for your film, with a curated roster featuring hundreds of leading composers and emerging indie artists.", "url": "https://www.musicbed.com" },
-      { "name": "Music Vine", "into": "Music Vine makes the world's finest production music accessible to projects of all shapes and sizes.", "url": "https://musicvine.com" },
-      { "name": "Artlist", "into": "Music Licensing for video, Music for videos, Music for films, royalty free music, Music subscription, music library for videos, music for YouTube videos, commercial music, Music Licensing for Videos & Films, royalty free music subscription. Music,Licensing,Video,Film,YouTube", "url": "https://artlist.io" },
-      { "name": "Marmoset", "into": "Meticulously curated rare, vintage and emerging artists, bands and record labels for music licensing.", "url": "https://www.marmosetmusic.com" },
-      { "name": "Soundstripe", "into": "Royalty free music and unlimited music for video, for one low price. Sign up for unlimited royalty free music downloads, and find the perfect song for your project in minutes!", "url": "https://soundstripe.com" },
-      { "name": "Soundsnap ", "into": "Soundsnap is the Leading Sound Library for Unlimited SFX Downloads. Browse 250,000+ Sound Effects Used by Hollywood Sound Designers & Editors.", "url": "https://www.soundsnap.com" },
-      { "name": "Audiosocket", "into": "Audiosocket is a music licensing company that gives media creators a way to quickly discover and license music. Our roster of original music and outstanding service have earned us a solid reputation as a trusted partner to hundreds of global brands and clients. Check out a few samples of our work.", "url": "https://www.audiosocket.com" },
-      { "name": "爱给网", "into": "爱给网-提供50万首免费配乐下载,短视频音乐,影视配乐,游戏背景音乐,正版品质,海量免费,每日更新,一键打包下载", "url": "http://www.aigei.com/music" },
+      {
+        "name": "Audio Library",
+        "into": "Audio Library 致力于为内容创作者推广 vlog 无版权音乐",
+        "url": "https://www.audiolibrary.com.co",
+        "tags": [
+          "free"
+        ]
+      },
+      {
+        "name": "Epidemic Sound",
+        "into": "15万YouTuber都在用的音乐平台，Our library is of the highest quality, usable on all social platforms and royalty-free forever.",
+        "url": "https://www.epidemicsound.com",
+        "tags": [
+          "subscription"
+        ]
+      },
+      {
+        "name": "AudioJungle",
+        "into": "Discover 896,497 Royalty Free Music tracks and audio files from only $1 on AudioJungle. Buy Royalty Free Music from a Global Community of Musicians and Sound Engineers.",
+        "url": "https://audiojungle.net"
+      },
+      {
+        "name": "Pond5",
+        "into": "Search the world's largest video collection plus millions of music tracks, sound effects, motion graphics and images. Over 20,000 new videos added daily. Find the perfect media for your next creative project. Search now.",
+        "url": "https://www.pond5.com"
+      },
+      {
+        "name": "PremiumBeat",
+        "into": "PremiumBeat's curated library of royalty-free music gives creative professionals the polished feel of the big production houses. All PremiumBeat's music is exclusive and 100% copyright clear. Start listening today!",
+        "url": "https://www.premiumbeat.com"
+      },
+      {
+        "name": "Musicbed",
+        "into": "Create a free account today and find the perfect song for your film, with a curated roster featuring hundreds of leading composers and emerging indie artists.",
+        "url": "https://www.musicbed.com"
+      },
+      {
+        "name": "Music Vine",
+        "into": "Music Vine makes the world's finest production music accessible to projects of all shapes and sizes.",
+        "url": "https://musicvine.com"
+      },
+      {
+        "name": "Artlist",
+        "into": "Music Licensing for video, Music for videos, Music for films, royalty free music, Music subscription, music library for videos, music for YouTube videos, commercial music, Music Licensing for Videos & Films, royalty free music subscription. Music,Licensing,Video,Film,YouTube",
+        "url": "https://artlist.io"
+      },
+      {
+        "name": "Marmoset",
+        "into": "Meticulously curated rare, vintage and emerging artists, bands and record labels for music licensing.",
+        "url": "https://www.marmosetmusic.com"
+      },
+      {
+        "name": "Soundstripe",
+        "into": "Royalty free music and unlimited music for video, for one low price. Sign up for unlimited royalty free music downloads, and find the perfect song for your project in minutes!",
+        "url": "https://soundstripe.com"
+      },
+      {
+        "name": "Soundsnap ",
+        "into": "Soundsnap is the Leading Sound Library for Unlimited SFX Downloads. Browse 250,000+ Sound Effects Used by Hollywood Sound Designers & Editors.",
+        "url": "https://www.soundsnap.com"
+      },
+      {
+        "name": "Audiosocket",
+        "into": "Audiosocket is a music licensing company that gives media creators a way to quickly discover and license music. Our roster of original music and outstanding service have earned us a solid reputation as a trusted partner to hundreds of global brands and clients. Check out a few samples of our work.",
+        "url": "https://www.audiosocket.com"
+      },
+      {
+        "name": "爱给网",
+        "into": "爱给网-提供50万首免费配乐下载,短视频音乐,影视配乐,游戏背景音乐,正版品质,海量免费,每日更新,一键打包下载",
+        "url": "http://www.aigei.com/music"
+      },
+      {
+        "name": "AGM商用音乐授权网站",
+        "into": "拥有来自于全球最大音乐版权公司Sony/ATV、EMI（百代）以及上万名独立音乐人的近千万首音乐作品版权，覆盖多数国家地区、音乐流派和情绪风格，满足游戏、动漫、影视剧、广告、视频配乐、会场、商城、咖啡厅播放等多种需求，并授权在电视台、网络平台、手机APP、电影院、户外广告等多种播放平台播放。",
+        "url": "https://agm.hifiveai.com/#!/newHome"
+      },
+      {
+        "name": "100Audio",
+        "url": "https://100audio.com/",
+        "into": "超过10万+首原创正版音乐由100Audio平台的独占音乐人创作，您可轻松在平台内使用搜索引擎找到合适的音乐并购买获得音乐授权。"
+      },
+      {
+        "name": "MUSINESS",
+        "into": "是目前中国最大的优质原创音乐库。致力于引领商用音乐的聚合和变现，打造音乐IP孵化生态社群，营造中国良好的音乐创作和版权意识及交易环境",
+        "url": "https://www.musiness.vip",
+      },
+      {
+        "name": "Music Time 版权音乐网",
+        "into": "专为亚洲市场需求规划的音乐曲库, 提供快速、合法的版权音乐服务, 多元优质的客制作曲团队给你最棒的合作体验",
+        "url": "https://cn.musictime-studio.com/index.php"
+      }
     ]
   }
 
@@ -58,6 +136,11 @@ export class SiteService {
         "name": "Pexels", "into": "The best free stock videos shared by the Pexels community.s", "url": "https://www.pexels.com/videos/"
       },
       { "name": "DISTLL", "into": "Curated HD stock video footage free for your personal and commercial use. 10 new videos every 10 days. Videos are licensed under the Creative Commons Zero license.", "url": "http://www.wedistill.io" },
+      {
+        "name": "Mixkit",
+        "into": "Download high quality, royalty free video footage and art. New awesome creative assets being added daily that are completely free to use. ",
+        "url": "https://mixkit.co/",
+      },
       { "name": "Mazwai", "into": "Download free creative commons HD video clips & footages.", "url": "http://mazwai.com " },
       { "name": "MotionElements", "into": "Download 4000+ free stock footage from our AI-driven marketplace with 3,000,000+ royalty-free stock videos, templates & music. - [MotionElements]", "url": "https://www.motionelements.com/free/stock-footage" },
       { "name": "FootageCrate", "into": "Free HD Archives. 1000's of special effects and elements by Hollywood industry professionals. Download Magic Powers, Action & Horror VFX, Transitions, Lens Flares/Bokeh, YouTube Video Effects and CTAs, Nuclear Blasts, Real Fire & Rain, Zombies ...", "url": "https://footagecrate.com" },
@@ -65,7 +148,11 @@ export class SiteService {
       { "name": "Videezy", "into": "Free HD Stock Video Footage! - Videezy is a community of Videographers who download and share free HD stock video!", "url": "https://www.videezy.com" },
       { "name": "monzoom.com", "into": "download free and royalty free motion video backgrounds, overlays, lower thirds, transitions, elements and intros for use in any commercial and private projects.  ", "url": "https://www.monzoom.com" },
       { "name": "IgniteMotion", "into": "Free motion backgrounds, free for commercial or personal use! all videos are High Definition, motion backgrounds to use in your video editing projects.", "url": "https://www.ignitemotion.com" },
-
+      {
+        "name": "coverr",
+        "into": "Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project. No attribution required.",
+        "url": "https://coverr.co/"
+      },
       { "name": "SplitShire", "into": "What would you do if you had amazing royalty free photos? Download free stock photos with no copyright restrictions and real look.", "url": "https://www.splitshire.com" },
       { "name": "openfootage", "into": "footage blog for textures, timelapse footage, HDRI panoramas and alpha elements mostly under creative commons license free to download", "url": "https://www.openfootage.net" },
       { "name": "OrangeHD", "into": "OrangeHD Stock offers hundreds of Full HD and HD footages and videos. All footages are free, both for commercial and non-commercial purposes. There are no hidden costs or need to sign-up.", "url": "http://www.orangehd.com" },
