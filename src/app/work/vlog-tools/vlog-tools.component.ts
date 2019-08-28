@@ -3,19 +3,21 @@ import { SiteService } from 'src/app/site.service';
 import { SeoService } from 'src/app/seo.service';
 
 @Component({
-  selector: 'app-vlogger-tools',
-  templateUrl: './vlogger-tools.component.html',
-  styleUrls: ['./vlogger-tools.component.sass']
+  selector: 'app-vlog-tools',
+  templateUrl: './vlog-tools.component.html',
+  styleUrls: ['./vlog-tools.component.sass']
 })
-export class VloggerToolsComponent implements OnInit {
+export class VlogToolsComponent implements OnInit {
 
 
-  public platformSites = [];
-  public musicSites = [];
-  public softwareSites = [];
-  public equipmentSites = [];
-  public tutorialSites = [];
-  public videoSites = [];
+  platformSites = [];
+  musicSites = [];
+  softwareSites = [];
+  equipmentSites = [];
+  tutorialSites = [];
+  videoSites = [];
+
+  title = "Vlog 工具人"
 
 
   constructor(
@@ -24,7 +26,7 @@ export class VloggerToolsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.updateVloggerToolsMetaTags();
+    this.updateVlogToolsMetaTags();
     this.platformSites = this._Sites.getPlatformSites();
     this.musicSites = this._Sites.getMusicSites();
     this.softwareSites = this._Sites.getSoftwareSites();
@@ -32,8 +34,8 @@ export class VloggerToolsComponent implements OnInit {
     this.videoSites = this._Sites.getVideoSites();
   }
 
-  updateVloggerToolsMetaTags() {
-    this.seoService.updateVloggerToolsMetaTags();
+  updateVlogToolsMetaTags() {
+    this.seoService.updateVlogToolsMetaTags();
   }
 
 

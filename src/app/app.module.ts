@@ -13,7 +13,7 @@ import { TeamComponent } from './team/team.component';
 import { FooterComponent } from './footer/footer.component';
 import { TimestampComponent } from './work/timestamp/timestamp.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { VloggerToolsComponent } from './work/vlogger-tools/vlogger-tools.component';
+import { VlogToolsComponent } from './work/vlog-tools/vlog-tools.component';
 import { SiteService } from './site.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
@@ -29,7 +29,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     FooterComponent,
     TimestampComponent,
     HomepageComponent,
-    VloggerToolsComponent,
+    VlogToolsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

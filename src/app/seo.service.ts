@@ -31,13 +31,13 @@ export class SeoService {
     });
   }
 
-  updateVloggerToolsMetaTags() {
-    this.titleService.setTitle("Vlogger 工具人 | VloggerTools - Perfowl")
+  updateVlogToolsMetaTags() {
+    this.titleService.setTitle("Vlog 工具人 | VlogTools - Perfowl")
     this.meta.updateTag({
-      name: 'description', content: 'Vlogger Tools 网址导航是 Vlogger 和 预备 Vlogger 的必备的导航站，收录了版权音乐，视频，教程，剪辑软件，剪辑等必备工具以及国内外网站，包含了 Vlogger 最常用的工具，素材，资料，网站。'
+      name: 'description', content: 'Vlog Tools 网址导航是 Vlogger 和 预备 Vlogger 的必备的导航站，收录了版权音乐，视频，教程，剪辑软件，剪辑等必备工具以及国内外网站，包含了制作 Vlog 最常用的工具，素材，资料，网站。'
     });
     this.meta.updateTag({
-      name: 'keyword', content: 'vlogger, 网红, 背景音乐，版权音乐，视频素材，剪辑教学，vlogger 平台，视频编辑软件，视频编辑教学，'
+      name: 'keyword', content: 'vlog, vlogger, up主, 网红, 背景音乐, 版权音乐, 视频素材, 剪辑教学, 视频编辑软件, 视频编辑教学'
     })
   }
 
