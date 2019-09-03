@@ -6,28 +6,18 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
-import { BannerComponent } from './banner/banner.component';
-import { ServiceComponent } from './service/service.component';
-import { WorkComponent } from './work/work.component';
-import { TeamComponent } from './team/team.component';
-import { FooterComponent } from './footer/footer.component';
-import { TimestampComponent } from './work/timestamp/timestamp.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { VlogToolsComponent } from './work/vlog-tools/vlog-tools.component';
+import { VlogToolsComponent } from './vlog-tools/vlog-tools.component';
 import { SiteService } from './site.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
-import { CardComponent } from './work/vlog-tools/utils/card/card.component';
+import { CardComponent } from './vlog-tools/utils/card/card.component';
+import { TimestampComponent } from './timestamp/timestamp.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    BannerComponent,
-    ServiceComponent,
-    WorkComponent,
-    TeamComponent,
-    FooterComponent,
     TimestampComponent,
     HomepageComponent,
     VlogToolsComponent,
