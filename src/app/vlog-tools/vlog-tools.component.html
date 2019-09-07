@@ -1,75 +1,74 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/vlogtools">{{ title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <a class="navbar-brand" href="/vlogtools">{{ title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <!-- <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <!-- <li class="nav-item">
                 <a class="nav-link" [ngx-scroll-to]="platform">平台</a>
             </li> -->
-            <li class="nav-item">
-                <a class="nav-link" [ngx-scroll-to]="music">音乐</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [ngx-scroll-to]="video">视频</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [ngx-scroll-to]="tutorial">教程</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [ngx-scroll-to]="editor">剪辑软件</a>
-            </li>
-        </ul>
-    </div>
+      <li class="nav-item">
+        <a class="nav-link" [ngx-scroll-to]="music">音乐</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngx-scroll-to]="video">视频</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngx-scroll-to]="tutorial">教程</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngx-scroll-to]="editor">剪辑软件</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-
-<div class="container">
+<div class="vlog-body">
+  <div class="container">
     <div class="title">
-        <mat-icon aria-hidden="false" aria-label="music">music_note</mat-icon>
-        <h4 class="d-inline-block" #music>音乐<small class="text-muted"> {{ musicSites.length }}</small></h4>
+      <mat-icon aria-hidden="false" aria-label="music">music_note</mat-icon>
+      <h4 class="d-inline-block" #music>音乐<small class="text-muted"> {{ musicSites.length }}</small></h4>
     </div>
 
     <div class="row">
-        <div *ngFor="let site of musicSites" class="col-md-4">
-            <app-card [site]="site"></app-card>
-        </div>
+      <div *ngFor="let site of musicSites" class="col-lg-4 col-md-6">
+        <app-card [site]="site"></app-card>
+      </div>
     </div>
 
     <div class="title">
-        <mat-icon aria-hidden="false" aria-label="video">videocam</mat-icon>
-        <h4 class="d-inline-block" #video>视频<small class="text-muted"> {{ videoSites.length }}</small></h4>
+      <mat-icon aria-hidden="false" aria-label="video">videocam</mat-icon>
+      <h4 class="d-inline-block" #video>视频<small class="text-muted"> {{ videoSites.length }}</small></h4>
     </div>
     <div class="row">
-        <div *ngFor="let site of videoSites" class="col-md-4">
-            <app-card [site]="site"></app-card>
-        </div>
+      <div *ngFor="let site of videoSites" class="col-lg-4 col-md-6">
+        <app-card [site]="site"></app-card>
+      </div>
     </div>
 
     <div class="title">
-        <mat-icon aria-hidden="false" aria-label="tutorial">menu_book</mat-icon>
-        <h4  class="d-inline-block" #tutorial>教程<small class="text-muted"> {{ tutorialSites.length }}</small></h4>
+      <mat-icon aria-hidden="false" aria-label="tutorial">menu_book</mat-icon>
+      <h4 class="d-inline-block" #tutorial>教程<small class="text-muted"> {{ tutorialSites.length }}</small></h4>
     </div>
     <div class="row">
-        <div *ngFor="let site of tutorialSites" class="col-md-4">
-            <app-card [site]="site"></app-card>
-        </div>
+      <div *ngFor="let site of tutorialSites" class="col-lg-4 col-md-6">
+        <app-card [site]="site"></app-card>
+      </div>
     </div>
 
     <div class="title">
-        <mat-icon aria-hidden="false" aria-label="software">video_library</mat-icon>
-        <h4 #editor class="d-inline-block">剪辑软件<small class="text-muted"> {{ softwareSites.length }}</small></h4>
+      <mat-icon aria-hidden="false" aria-label="software">video_library</mat-icon>
+      <h4 #editor class="d-inline-block">剪辑软件<small class="text-muted"> {{ softwareSites.length }}</small></h4>
     </div>
     <div class="row">
-        <div *ngFor="let site of softwareSites" class="col-md-4">
-            <app-card [site] ="site"></app-card>
-        </div>
+      <div *ngFor="let site of softwareSites" class="col-lg-4 col-md-6">
+        <app-card [site]="site"></app-card>
+      </div>
     </div>
-</div>
-
-
-<div class="text-center footer">
+  </div>
+  <div class="text-center footer">
     <small class="text-muted">Copryright © 2018 Perfowl studio, All rights reserved. 鲁ICP备18016991号-1</small>
+  </div>
 </div>
