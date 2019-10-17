@@ -12,6 +12,7 @@ import { SiteService } from './site.service';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { CardComponent } from './vlog-tools/utils/card/card.component';
 import { TimestampComponent } from './timestamp/timestamp.component';
+import { CarouselComponent } from './utils/carousel/carousel.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TimestampComponent } from './timestamp/timestamp.component';
     HomepageComponent,
     VlogToolsComponent,
     CardComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

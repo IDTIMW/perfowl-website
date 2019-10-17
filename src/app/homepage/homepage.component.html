@@ -49,22 +49,22 @@
 
 
 <!-- our work -->
-<div class="work">
-  <div class="container" id="work">
-    <h3 class="d-flex justify-content-center underline-small">Our Work</h3>
-    <div class="row youli">
-      <div class="col-lg-6 img-youli">
-        <img class="mx-auto d-block" src="/assets/images/work_timestamp_into_2.png" alt="timestamp screen">
-      </div>
-      <div class="col-lg-6 into">
-        <div class="row name d-block mx-auto">
-          <img class="app-icon shadow mr-3" src="assets/images/timestamp_icon.png">
-          <h2>时间戳</h2>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active work">
+      <div class="container " id="work">
+        <h3 class="d-flex justify-content-center underline-small">Our Work</h3>
+        <div class="row">
+          <app-carousel [project] = "project"></app-carousel>
         </div>
-        <p class="col-10 col-md-8 text-center mx-auto">一款追求小而美的时间管理工具，内置番茄时钟与普通计时器，可在不同的使用场景下使用合适的方式记录时间
-        </p>
-        <button class="btn btn-primary d-block mx-auto" [routerLink]="['/timestamp']">应用介绍</button>
       </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://via.placeholder.com/150" class="d-block w-100" alt="...">
     </div>
   </div>
 </div>

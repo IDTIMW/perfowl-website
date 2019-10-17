@@ -17,7 +17,7 @@ export class VlogToolsComponent implements OnInit {
   tutorialSites = [];
   videoSites = [];
 
-  title = "Vlog 工具人"
+  title = 'Vlog 工具人';
 
 
   constructor(
@@ -40,9 +40,8 @@ export class VlogToolsComponent implements OnInit {
 
 
 
-  scrollToElement($element): void {
-    // console.log($element);
-    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  scrollToElement($element: { scrollIntoView: (arg0: { behavior: string; block: string; inline: string; }) => void; }): void {
+    $element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 
 }
