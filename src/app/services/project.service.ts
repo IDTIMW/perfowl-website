@@ -22,7 +22,7 @@ export class ProjectService {
     vlogToolsProject.name = 'vlog 工具人';
     vlogToolsProject.url = '/vlogtools';
     vlogToolsProject.into = 'Vlog 工具人是 Vlogger 和预备 Vlogger 的必备的导航站，收录了版权音乐，视频，教程，剪辑软件，剪辑等必备工具以及国内外网站';
-    vlogToolsProject.logo = 'assets/images/timestamp_icon.png';
+    vlogToolsProject.logo = 'assets/images/vlog_tools_logo.png';
     vlogToolsProject.image = '/assets/images/work_timestamp_into_2.png';
 
     projects.push(timestampProject, vlogToolsProject);

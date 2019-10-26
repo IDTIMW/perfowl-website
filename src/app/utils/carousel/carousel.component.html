@@ -4,12 +4,11 @@
   </div>
   <div class="col-lg-6 into">
     <div class="row name d-block mx-auto">
-      <img class="app-icon shadow mr-3" src="{{ project != null ? project.logo : 'assets/images/timestamp_icon.png' }}">
+      <img class="app-icon shadow mr-3" [ngClass]="project.name == 'vlog 工具人' ? 'vlog-tools-logo-bg' : ''" src="{{ project != null ? project.logo : 'assets/images/timestamp_icon.png' }}">
       <h2>{{ project != null ? project.name : "项目名称" }}</h2>
     </div>
     <p class="col-10 col-md-8 text-center mx-auto">
       {{ project != null ? project.into: "默认介绍"}}
-      <!-- 一款追求小而美的时间管理工具，内置番茄时钟与普通计时器，可在不同的使用场景下使用合适的方式记录时间 -->
     </p>
     <button class="btn btn-primary d-block mx-auto" [routerLink]="project != null ? project.url : '/' ">项目首页</button>
   </div>
