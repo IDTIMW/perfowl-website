@@ -1,8 +1,8 @@
 <a target="_blank" href="{{ site['url'] }}">
-    <div class="card">
+    <div class="card" [ngClass]="{ 'music-background-color' : site['type'] == 'music', 'video-background-color' : site['type'] == 'video', 'tutorial-background-color' : site['type'] == 'tutorial', 'software-background-color' : site['type'] == 'software'}">
         <div class="card-body">
-            <h5 class="card-title">{{ site['name'] }}</h5>
-            <p class="card-subtitle mb-2 text-muted text-truncate">{{ site['into'] }}</p>
+            <h5 class="card-title text-white">{{ site['name'] }}</h5>
+            <p class="card-subtitle mb-2 text-white text-truncate font-weight-lighter">{{ site['into'] }}</p>
         </div>
     </div>
 </a>
