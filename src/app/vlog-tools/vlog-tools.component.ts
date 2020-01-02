@@ -29,6 +29,7 @@ export class VlogToolsComponent implements OnInit {
 
   ngOnInit() {
     this.updateVlogToolsMetaTags();
+    window.scroll(0, 0);
     this.platformSites = this._Sites.getPlatformSites();
     this.musicSites = this._Sites.getMusicSites();
     this.softwareSites = this._Sites.getSoftwareSites();

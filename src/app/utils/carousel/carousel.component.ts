@@ -8,13 +8,12 @@ import { ProjectModule } from 'src/app/modules/project/project.module';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  ) {}
 
   @Input() project: ProjectModule;
 
   ngOnInit() {
-	  this.updateVlogToolsMetaTags();
-    window.scroll(0, 0);
   }
 
 
