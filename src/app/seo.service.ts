@@ -40,6 +40,4 @@ export class SeoService {
       name: 'keyword', content: 'vlog, vlogger, up主, 网红, 背景音乐, 版权音乐, 视频素材, 剪辑教学, 视频编辑软件, 视频编辑教学'
     });
   }
-
-
 }
