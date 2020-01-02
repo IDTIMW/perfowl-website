@@ -38,6 +38,10 @@ export class VlogToolsComponent implements OnInit {
     this.seoService.updateVlogToolsMetaTags();
   }
 
+  returnHomepage() {
+    this.router.navigate(['/']);
+  }
+
 
 
   scrollToElement($element: { scrollIntoView: (arg0: { behavior: string; block: string; inline: string; }) => void; }): void {

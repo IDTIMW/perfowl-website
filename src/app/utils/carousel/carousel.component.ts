@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ProjectModule } from 'src/app/modules/project/project.module';
 
 @Component({
   selector: 'app-carousel',
@@ -9,7 +10,7 @@ export class CarouselComponent implements OnInit {
 
   constructor() { }
 
-  @Input() project: [];
+  @Input() project: ProjectModule;
 
   ngOnInit() {
   }
