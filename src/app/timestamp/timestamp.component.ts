@@ -15,9 +15,14 @@ export class TimestampComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+	  // update timestamp meta tags.
     this.updateTimestampMetaTags();
+
+	  // scroll to the top of the windows.
     window.scroll(0, 0);
-    console.log('url: ' + this.router.url);
+//    console.log('url: ' + this.router.url);
+	
+	  // if url equals privacy-policy then open the modal of conrtent.
     if (this.router.url == "/timestamp/privacy-policy") {
       document.getElementById("openModalButton").click();
     }

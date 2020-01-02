@@ -13,6 +13,8 @@ export class CarouselComponent implements OnInit {
   @Input() project: ProjectModule;
 
   ngOnInit() {
+	  this.updateVlogToolsMetaTags();
+    window.scroll(0, 0);
   }
 
 
