@@ -1,27 +1,38 @@
-# Perfowl
+# Perfowl Studio website
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
-## Development server
+## 两个野路子出身的独立开发者发起的小站
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 能力介绍
 
-## Code scaffolding
+**产品设计**：每一次的产品设计都视为改变世界的第一步；需求分析，原型设计，Demo 开发，从内到外的产品设计流程，不在真空中幻想。
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**UI/UX**：我们希望能通过设计教会用户使用产品；UI 界面设计，交互动画，Style Guideline 定义，App Icon 创作，品牌标识设计
 
-## Build
+**全栈开发**：从骨子里就散发着优雅的气息；Web，iOS，Android一个不落，找到最佳的平台实现你的想法，不为了全栈而全栈。
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 项目
 
-## Running end-to-end tests
+**timestamp ｜ 时间戳**：使用flutter制作的一款时间管理软件，包含番茄时钟以及普通计时器两种计时方式，在不同的场景使用不同的计时器来记录自己。
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**vlog 工具人**：针对于制作vlog的 UP主们制作的工具导航类网站，里面包含音乐素材，视频素材，剪辑教程，常用剪辑软件三个大模块。同时也希望能收到大家添加其他网站或者项目的请求。
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### 成员介绍
+
+**IDTIMW**：Product Design/Flutter/Web
+
+**winwinyang**：Product Design/UI/IOS/Web
+
+
+
+## 欢迎联系我们
+
+**邮箱**：hello@perfowl.com
+
+**IDTIMW的个人博客**：[idtimw.com](https://idtimw.com)
+
